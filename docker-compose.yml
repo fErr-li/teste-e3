@@ -1,0 +1,16 @@
+services:
+  motor:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - path: .env
+        required: false # sem .env, roda com o LLM mockado
+    environment:
+      DATABASE_PATH: /app/data/motor.db
+      TENANTS_DIR: /app/config/tenants
+    volumes:
+      - dados:/app/data
+
+volumes:
+  dados:
