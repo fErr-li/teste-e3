@@ -1,0 +1,15 @@
+# Dependências e build
+node_modules/
+dist/
+dist-test/
+tsconfig.tsbuildinfo
+
+# Banco local e variáveis de ambiente
+data/
+.env
+
+# Logs
+*.log
+
+# Anotações pessoais (planejamento, PDF do teste, guia de estudo)
+context/
